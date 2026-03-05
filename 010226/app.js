@@ -1,10 +1,9 @@
 //1
 // function isEven(n) {
-//     if (n < 0) return false;
 //     return n % 2 == 0 ? true : false
 // }
 
-// console.log(isEven(0));
+// console.log(isEven(-4));
 
 //2
 // function sumUpTo(n) {
