@@ -1,30 +1,30 @@
 //1
 // function charCount(text) {
 //     let length = text.length;
-//     console.log(length);
+//     return length;
 // }
 
 // let text = "hello world";
-// charCount(text);
+// console.log(charCount(text));
 
 //2
 // function uppercase(txt) {
 //     let upp = txt.toUpperCase();
-//     console.log(upp);
+//     return upp;
 // }
 
 // let uppTxt = "hello world";
-// uppercase(uppTxt)
+// console.log(uppercase(uppTxt));
 
 //3
 // function sum(firstNum, nextNum) {
 //     let result = firstNum + nextNum;
-//     console.log(result);
+//     return result;
 // }
 
 // let firstNum = 21;
 // let nextNum = 3;
-// sum(firstNum, nextNum);
+// console.log(sum(firstNum, nextNum));
 
 //4
 // function reverseString(str) {
@@ -32,11 +32,11 @@
 //     for (let i = str.length - 1; i >= 0; i--) {
 //         reversed = reversed + str[i];
 //     }
-//     console.log(reversed);
+//     return reversed;
 // }
 
 // let str = "hello";
-// reverseString(str);
+// console.log(reverseString(str));
 
 //5
 // let nextStr = "Learning JavaScript";
@@ -63,7 +63,7 @@
 // let numList = [3, 6, 9, 12];
 // let target = 9;
 // for (let i = 0; i < numList.length; i++) {
-//     if (numList[i] == target) {
+//     if (numList[i] === target) {
 //         console.log(i);
 //     }
 // }
@@ -139,11 +139,8 @@
 // console.log(getType(6));
 
 //12
-// function isFalsy(val){
-//     if(val == "" || val == 0 || val == false || val == null || val == undefined) {
-//         return true;
-//     }
-//     return false;
+// function isFalsy(val) {
+//     return !val;
 // }
 
 // console.log(isFalsy(""));
@@ -152,6 +149,7 @@
 // console.log(isFalsy(null));
 // console.log(isFalsy(undefined));
 // console.log(isFalsy("abc"));
+// console.log(isFalsy(NaN));
 
 //13
 // function compare(firstVal, nextVal) {
@@ -208,10 +206,10 @@
 //18
 // function isPrimitiveType(value) {
 //     return (
+//         value === "null" ||
 //         typeof value === "string" ||
 //         typeof value === "number" ||
 //         typeof value === "boolean" ||
-//         typeof value === "null" ||
 //         typeof value === "undefined" ||
 //         typeof value === "symbol" ||
 //         typeof value === "bigint"
